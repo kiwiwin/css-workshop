@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<style type="text/css">
+		.content {
+			max-width: 300px;
+			margin: 0 auto;
+			padding: 10px;
+			background-color: lightblue;
+			margin-bottom: 20px;
+		}
+
+		.light {
+			font-size: 0.75em;
+		}
+
+		.root-light {
+			font-size: 0.75rem;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="content">
+		Box Model
+	</div>
+
+	<div class="content">
+		Box Model
+		<div class="light">this is for .75em</div>
+	</div>
+
+	<div class="content">
+		Box Model
+		<div class="light">
+			this is for .75em
+			<div class="light">
+				this is for .75em * .75em
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		Box Model
+		<div class="root-light">
+			parent element using .75rem
+			<div class="root-light">
+				child element using .75rem
+			</div>
+		</div>
+	</div>
+</body>
+</html>
