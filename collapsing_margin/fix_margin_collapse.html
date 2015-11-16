@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<style type="text/css">
+		.content {
+			border: 1px solid black;
+			background-color: lightblue;
+			margin: 30px 10px;
+		}
+
+		.wrapper {
+			max-width: 300px;
+			margin: 0 auto;
+			padding: 1px;
+			background-color: yellow;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+			color: blue;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+<div class="canvas">
+	<h1>
+		Collapsing Margin
+	</h1>
+	<div class="wrapper">
+		<div class="content">
+			Collapsing Content
+		</div>
+		<p>
+			collapsing margin is tricky
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
