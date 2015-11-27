@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>non-floated div contain float</title>
+	<style type="text/css">
+		body {
+			max-width: 960px;
+			padding: 30px;
+		}
+
+		.logo {
+			float: left;
+		}
+
+		.container1 {
+			float: left;
+			border: 2px solid black;
+		}
+
+		.container1 h1 {
+			float: left;
+		}
+
+		.container2 {
+			clear: both;
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+ 	<h1>Solution2: Float the containing element</h1>
+ 	<p>A floated container div expands to fully contain any floated elements inside it</p>
+ 	<p>If you go this route, make sure you add a clear property to whatever element follows the floated container to make sure the following element drops below the containr</p>
+	<div class="container1">
+		<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" class="logo">
+		<h1>First Container</h1>
+	</div>
+	<div class="container2">
+		<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" class="logo">
+		<h1>Second Container</h1>
+	</div>
+</body>
+</html>

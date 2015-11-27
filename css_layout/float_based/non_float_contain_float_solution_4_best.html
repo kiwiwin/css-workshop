@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>non-floated div contain float</title>
+	<style type="text/css">
+		body {
+			max-width: 960px;
+			padding: 30px;
+		}
+
+		.logo {
+			float: left;
+		}
+
+		.container1 {
+			border: 2px solid black;
+		}
+
+		.container1:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+
+		.container2 {
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Use the Micro Clear Fix</h1>
+	<div class="container1">
+		<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" class="logo">
+		<h1>First Container</h1>
+	</div>
+	<div class="container2">
+		<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" class="logo">
+		<h1>Second Container</h1>
+	</div>
+</body>
+</html>

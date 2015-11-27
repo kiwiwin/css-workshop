@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>non-floated div contain float</title>
+	<style type="text/css">
+		body {
+			max-width: 960px;
+			padding: 30px;
+		}
+
+		.logo {
+			float: left;
+		}
+
+		.container1 {
+			border: 2px solid black;
+		}
+
+		.container2 {
+			border: 2px solid red;
+		}
+
+		.container1 br, .container2 br {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<h1>Solution1: Add a clearing element at the bottom of the containing div</h1>
+
+	<div class="container1">
+		<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" class="logo">
+		<h1>First Container</h1>
+		<br/>
+	</div>
+	<div class="container2">
+		<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" class="logo">
+		<h1>Second Container</h1>
+		<br/>
+	</div>
+</body>
+</html>
